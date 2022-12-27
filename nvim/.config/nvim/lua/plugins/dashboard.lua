@@ -34,11 +34,6 @@ function M.config()
 	}
 	db.custom_center = {
 		{
-			icon = " ",
-			desc = " ",
-			shortcut = " ",
-		},
-		{
 			desc = "Find  File                              ",
 			shortcut = "f f",
 		},
@@ -47,6 +42,12 @@ function M.config()
 			shortcut = "f b",
 		},
 	}
+	db.custom_footer = {
+		desc = "Blazingly Fast",
+	}
+	db.header_pad = 4
+	db.center_pad = 6
+	db.footer_pad = 8
 end
 
 return M
