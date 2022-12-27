@@ -16,7 +16,8 @@ alias work="cd /Volumes/Cup/Dev/Work/"
 eval $(/opt/homebrew/bin/brew shellenv)
 
 #SOURCE-------------------------------------------------------------------
-source /Users/cupskrrtt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #STARTSHIP----------------------------------------------------------------
 eval "$(starship init zsh)"
