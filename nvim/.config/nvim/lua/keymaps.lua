@@ -20,8 +20,8 @@ keymap.set("n", "ss", ":w<CR>")
 keymap.set("n", "ww", ":q<CR>")
 
 --window related keymap
-keymap.set("n", "<leader>hs", ":split<CR>", { silent = true })
-keymap.set("n", "<leader>vs", ":vsplit<CR>", { silent = true })
+keymap.set("n", "<leader>sh", ":split<CR>", { silent = true })
+keymap.set("n", "<leader>sv", ":vsplit<CR>", { silent = true })
 
 --window movement
 keymap.set("n", "sh", "<C-w>h")
