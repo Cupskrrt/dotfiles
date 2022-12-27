@@ -9,7 +9,7 @@ function M.config()
 	lualine.setup({
 		options = {
 			icons_enabled = true,
-			theme = "dracula-nvim",
+			theme = "tokyonight",
 		},
 		sections = {
 			lualine_a = { "mode", "branch" },

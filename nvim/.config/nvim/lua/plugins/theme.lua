@@ -1,15 +1,20 @@
 local M = {
-	"Mofiqul/dracula.nvim",
+	"folke/tokyonight.nvim",
 	event = "VimEnter",
 }
 
 function M.config()
-	local dracula = require("dracula")
-	dracula.setup({
-		transparent_bg = true,
-		italic_comment = true,
+	local theme = require("tokyonight")
+	theme.setup({
+		style = "night",
+		transparent = true,
+		terminal_colors = true,
+		styles = {
+			comments = { italic = true },
+			keywords = { italic = true },
+		},
 	})
-	vim.cmd([[colorscheme dracula]])
+	vim.cmd([[colorscheme tokyonight]])
 end
 
 return M
