@@ -9,6 +9,7 @@ alias webdev="cd /Volumes/Cup/DEV/web-dev/"
 alias mc="cd /Volumes/Cup/mcserver/"
 alias cup="cd /Volumes/Cup/"
 alias dot="cd ~/.dotfiles/"
+alias gl="lazygit"
 
 #EVAL---------------------------------------------------------------------
 eval $(/opt/homebrew/bin/brew shellenv)
