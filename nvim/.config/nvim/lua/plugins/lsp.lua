@@ -18,6 +18,9 @@ local M = {
 		-- Snippets
 		"L3MON4D3/LuaSnip",
 		"rafamadriz/friendly-snippets",
+
+		-- Utils
+		"onsails/lspkind.nvim",
 	},
 }
 
@@ -42,6 +45,7 @@ function M.config()
 	})
 
 	local cmp = require("cmp")
+	local lspkind = require("lspkind")
 
 	lsp.setup_nvim_cmp({
 		mapping = lsp.defaults.cmp_mappings({
@@ -61,6 +65,13 @@ function M.config()
 			{ name = "nvim_lsp" },
 			{ name = "buffer" },
 			{ name = "cmp" },
+		},
+		formatting = {
+			format = lspkind.cmp_format({
+				mode = "text",
+				maxwidth = 50,
+				ellipsis_char = "...",
+			}),
 		},
 	})
 
