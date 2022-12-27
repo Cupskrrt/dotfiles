@@ -5,11 +5,12 @@ alias fzf='find * -type f | fzf > selected'
 alias icat="kitty +kitten icat"
 alias ls="exa --long --header --all --icons"
 alias cb="cd .."
-alias webdev="cd /Volumes/Cup/DEV/web-dev/"
 alias mc="cd /Volumes/Cup/mcserver/"
 alias cup="cd /Volumes/Cup/"
 alias dot="cd ~/.dotfiles/"
 alias gl="lazygit"
+alias proj="cd /Volumes/Cup/Dev/Projects/"
+alias work="cd /Volumes/Cup/Dev/Work/"
 
 #EVAL---------------------------------------------------------------------
 eval $(/opt/homebrew/bin/brew shellenv)
