@@ -19,5 +19,5 @@ eval $(/opt/homebrew/bin/brew shellenv)
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-#STARTSHIP----------------------------------------------------------------
+#STARSHIP----------------------------------------------------------------
 eval "$(starship init zsh)"
