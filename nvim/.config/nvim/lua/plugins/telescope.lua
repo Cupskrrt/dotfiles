@@ -7,7 +7,7 @@ local M = {
 		"kyazdani42/nvim-web-devicons",
 	},
 	lazy = true,
-	keys = { { "ff", mode = "n" }, { "fb", mode = "n" } },
+	keys = { { "ff", mode = "n" }, { "fb", mode = "n" }, { "ft", mode = "n" } },
 }
 
 function M.config()
@@ -35,6 +35,13 @@ function M.config()
 				hijack_netrw = true,
 			},
 		},
+		pickers = {
+			live_grep = {
+				additional_args = function(opts)
+					return { "--hidden", "-g", "!.git" }
+				end,
+			},
+		},
 	})
 
 	telescope.load_extension("file_browser")
@@ -57,6 +64,7 @@ function M.config()
 			initial_mode = "normal",
 			layout_config = { height = 40 },
 		})
+		vim.keymap.set("n", "ft", ":TodoTelescope<CR>", { desc = "find todos in project" })
 	end)
 end
 
