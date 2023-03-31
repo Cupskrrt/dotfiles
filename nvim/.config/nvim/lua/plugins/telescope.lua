@@ -46,14 +46,14 @@ function M.config()
 
 	telescope.load_extension("file_browser")
 
-	vim.keymap.set("n", "ff", function()
+	vim.keymap.set("n", "<leader>ff", function()
 		builtin.find_files({
 			no_ignore = false,
 			hidden = true,
 		})
 	end)
 
-	vim.keymap.set("n", "fb", function()
+	vim.keymap.set("n", "<leader>fb", function()
 		telescope.extensions.file_browser.file_browser({
 			path = "%:p:h",
 			cwd = telescope_buffer_dir(),
@@ -64,7 +64,7 @@ function M.config()
 			initial_mode = "normal",
 			layout_config = { height = 40 },
 		})
-		vim.keymap.set("n", "ft", ":TodoTelescope<CR>", { desc = "find todos in project" })
+		vim.keymap.set("n", "<leader>ft", ":TodoTelescope<CR>", { desc = "find todos in project" })
 	end)
 end
 
