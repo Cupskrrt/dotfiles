@@ -1,8 +1,8 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 require("config.base")
 require("config.highlight")
 require("config.keymaps")
+require("config.diagnostic")
 
 local has = function(x)
 	return vim.fn.has(x) == 1
