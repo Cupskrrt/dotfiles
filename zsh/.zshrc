@@ -18,5 +18,10 @@ eval $(/opt/homebrew/bin/brew shellenv)
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-#STARSHIP----------------------------------------------------------------
+#STARTING TMUX------------------------------------------------------------
+case $- in *i*)
+    [ -z "$TMUX" ] && exec tmux
+esac
+
+#STARSHIP-----------------------------------------------------------------
 eval "$(starship init zsh)"
