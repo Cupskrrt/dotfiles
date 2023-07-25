@@ -1,13 +1,10 @@
-local M = {
-	"windwp/nvim-autopairs",
-	event = "InsertEnter",
+return {
+  "windwp/nvim-autopairs",
+  event = "InsertEnter",
+  config = function()
+    require("nvim-autopairs").setup({
+      disable_filetype = { "TelescopePrompt", "vim" }
+    })
+  end
+
 }
-
-function M.config()
-	local pair = require("nvim-autopairs")
-	pair.setup({
-		disable_filetype = { "TelescopePrompt", "vim" },
-	})
-end
-
-return M

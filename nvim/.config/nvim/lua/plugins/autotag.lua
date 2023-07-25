@@ -1,11 +1,7 @@
-local M = {
-	"windwp/nvim-ts-autotag",
-	event = "InsertEnter",
+return {
+  "windwp/nvim-ts-autotag",
+  event = "InsertEnter",
+  config = function()
+    require("nvim-ts-autotag").setup()
+  end
 }
-
-function M.config()
-	local autotag = require("nvim-ts-autotag")
-	autotag.setup()
-end
-
-return M

@@ -34,7 +34,6 @@ vim.opt.wrap = false --no wrap line
 vim.opt.backspace = "start,eol,indent"
 vim.opt.path:append({ "**" }) --finding files - search down into subfolder
 vim.opt.wildignore:append({ "*/node_modules/*" })
-vim.opt.signcolumn = "yes"
 
 --turn off paste when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", { pattern = "*", command = "set nopaste" })

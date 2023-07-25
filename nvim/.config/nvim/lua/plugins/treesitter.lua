@@ -1,29 +1,24 @@
-local M = {
-	"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpdate",
-	event = "BufAdd",
+return {
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  event = "BufAdd",
+  config = function()
+    require("nvim-treesitter.configs").setup({
+      highlight = {
+        enable = true,
+        disable = {},
+      },
+      ensure_installed = {
+        "tsx",
+        "lua",
+        "json",
+        "css",
+        "javascript",
+        "vim",
+      },
+      autotag = {
+        enable = true,
+      },
+    })
+  end
 }
-
-function M.config()
-	local ts = require("nvim-treesitter.configs")
-	ts.setup({
-		highlight = {
-			enable = true,
-			disable = {},
-		},
-		ensure_installed = {
-			"tsx",
-			"lua",
-			"json",
-			"css",
-			"javascript",
-			"vim",
-			"http",
-		},
-		autotag = {
-			enable = true,
-		},
-	})
-end
-
-return M

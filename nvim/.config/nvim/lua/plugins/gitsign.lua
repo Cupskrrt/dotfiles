@@ -1,11 +1,7 @@
-local M = {
-	"lewis6991/gitsigns.nvim",
-	event = "InsertEnter",
+return {
+  "lewis6991/gitsigns.nvim",
+  event = "InsertEnter",
+  config = function()
+    require("gitsigns").setup()
+  end
 }
-
-function M.config()
-	local gitsigns = require("gitsigns")
-	gitsigns.setup()
-end
-
-return M
