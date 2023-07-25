@@ -4,7 +4,6 @@ alias vconf='cd ~/.dotfiles/nvim/.config/nvim/'
 alias fzf='find * -type f | fzf > selected'
 alias icat="kitty +kitten icat"
 alias ls="exa --long --header --all --icons"
-alias cb="cd .."
 alias mc="cd /Volumes/Cup/mcserver/"
 alias cup="cd /Volumes/Cup/"
 alias dot="cd ~/.dotfiles/"
