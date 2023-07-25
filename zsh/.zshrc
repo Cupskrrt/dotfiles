@@ -5,7 +5,6 @@ alias fzf='find * -type f | fzf > selected'
 alias icat="kitty +kitten icat"
 alias ls="exa --long --header --all --icons"
 alias mc="cd /Volumes/Cup/mcserver/"
-alias cup="cd /Volumes/Cup/"
 alias dot="cd ~/.dotfiles/"
 alias gl="lazygit"
 alias proj="cd /Volumes/Cup/Dev/Projects/"
