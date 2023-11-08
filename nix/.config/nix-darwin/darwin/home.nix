@@ -12,10 +12,12 @@
       starship
       tmux
       lazygit
+      direnv
       # App
       alacritty
-      raycast
+      # raycast
       rectangle
+      postman
     ];
     stateVersion = "23.05";
   };
