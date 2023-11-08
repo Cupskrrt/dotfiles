@@ -15,6 +15,7 @@
       direnv
       # App
       alacritty
+      raycast
       rectangle
       postman
     ];
