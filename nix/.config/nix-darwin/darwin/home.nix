@@ -4,7 +4,7 @@
     packages = with pkgs; [
       # Terminal
       git
-      nodejs
+      nodejs_20
       yarn
       neovim
       stow
