@@ -13,11 +13,13 @@
       tmux
       lazygit
       direnv
+
       # App
       alacritty
       raycast
       rectangle
       postman
+      dbeaver
     ];
     stateVersion = "23.05";
   };
