@@ -13,7 +13,6 @@
       tmux
       lazygit
       direnv
-      mysql80
 
       # App
       alacritty
